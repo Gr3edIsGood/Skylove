@@ -1,0 +1,2169 @@
+body
+  margin-top: 10px
+  background-color: #eef2f5
+//	        Container
+//_________________________________
+.container
+  width: 100%
+  max-width: 1230px
+  margin: 0 auto
+  padding: 0 1.5rem
+//	        to-up button
+//_________________________________
+.btn__up--wrapper
+  box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.49)
+  font-family: neris-semibold,Arial
+  font-size: 18px
+  line-height: 28px
+  font-weight: 600
+  color: #6789a3
+  position: fixed
+  padding: 40px
+  top: 161px
+  left: 0
+  width: 140px
+  height: 100%
+  background-image: linear-gradient(to bottom, #eef2f5, #e9edf0, #e5e9ec, #e0e4e7, #dce0e3)
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  .btn__up
+    display: flex
+    align-items: center
+    flex-direction: column
+
+//	        Header
+//_________________________________
+.header
+  background-color: #517198
+  .header__content
+    position: relative
+    height: 70px
+    display: flex
+    align-items: center
+    .burger
+      position: absolute
+      left: -71px
+      width: 25px
+      height: 16px
+      cursor: pointer
+      display: flex
+      justify-content: center
+      align-items: center
+      .burger__item
+        font-size: 0
+        width: 25px
+        height: 2px
+        background-color: #ffffff
+        box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.15)
+        position: relative
+        &:after, &:before
+          content: ""
+          height: 2px
+          width: 25px
+          position: absolute
+          background-color: #ffffff
+          box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.15)
+        &:after
+          top: -7px
+        &:before
+          top: 7px
+    .burger__menu
+      z-index: 50
+      display: none
+      position: absolute
+      top: 0
+      left: -310px
+      width: 280px
+      height: 5000px
+      background-color: #ffffff
+      box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.1)
+      .burger__content
+        .burger__top
+          padding: 23px 0 23px 26px
+          background-color: #3c5c83
+          box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.23)
+          .burger__hide
+            display: flex
+            align-items: center
+            cursor: pointer
+            font-family: neris-semibold, Arial
+            font-size: 14px
+            line-height: 22px
+            font-weight: 600
+            color: #d3ebfe
+            border: none
+            outline: none
+            background-color: transparent
+            img
+              margin-right: 27px
+        .burger__nav
+          display: flex
+          padding: 18px 0 20px 26px
+          border-bottom: 1px solid #dbdfe2
+          .burger__nav--images
+            display: flex
+            align-items: center
+            justify-content: space-between
+            flex-direction: column
+            margin-right: 21px
+            .burger__nav--item
+              margin-top: 12px
+              &:nth-child(9)
+                img
+                  margin-bottom: 6px
+
+
+          .burger__nav--text
+            .burger__nav--item
+              .burger__nav--title
+                box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.28)
+                font-family: neris-light, Arial
+                font-size: 14px
+                font-weight: 300
+                line-height: 45px
+                color: #77889d
+              &:nth-child(4)
+                position: relative
+                &:after
+                  display: flex
+                  justify-content: center
+                  align-items: center
+                  content: '5'
+                  width: 20px
+                  height: 20px
+                  position: absolute
+                  border-radius: 50%
+
+                  top: 12.5px
+                  right: -18px
+                  background-color: #f77b6f
+                  color: #ffffff
+
+                  box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.11)
+                  font-family: neris-black, Arial
+                  font-size: 13px
+                  line-height: 11px
+                  font-weight: 900
+              &:nth-child(7)
+                position: relative
+                &:after
+                  display: flex
+                  justify-content: center
+                  align-items: center
+                  content: '36'
+
+                  position: absolute
+                  border-radius: 50%
+                  padding: 6px 5px
+                  top: 10px
+                  right: -41px
+                  background-color: #f77b6f
+                  color: #ffffff
+
+                  box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.11)
+                  font-family: neris-black, Arial
+                  font-size: 13px
+                  line-height: 11px
+                  font-weight: 900
+        .burger__settings
+          display: flex
+          align-items: center
+          padding: 15px 0 0 30px
+          .burger__settings--title
+            box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.28)
+            font-family: neris-light, Arial
+            font-size: 14px
+            font-weight: 300
+            line-height: 45px
+            color: #77889d
+
+            margin-left: 26px
+
+
+    .header__logo
+      display: flex
+      align-items: center
+      .header__logo--img
+      .header__logo--text
+        margin-left: 1.8rem
+        .header__logo--title
+          height: 20px
+        .header__logo--subtitle
+          min-width: 195px
+          font-family: neris-semibold, Arial
+          font-size: 8px
+          margin-top: 4px
+          font-weight: 600
+          text-transform: uppercase
+          letter-spacing: 1.26em
+          color: #b7c5d4
+    .header__nav
+      margin-left: 109px
+      .header__nav--list
+        display: flex
+        .header__nav--item
+          display: flex
+          align-items: center
+          justify-content: center
+          width: 139px
+          height: 70px
+          border: 1px solid #6988ac
+          font-family: neris-semibold, Arial
+          font-size: 17px
+          line-height: 22px
+          font-weight: 600
+          color: #d3ebfe
+          background-color: #5f7fa6
+          span
+            margin-top: -3px
+            margin-left: -3px
+          &:first-child
+            width: 91px
+            background-color: #3c5c83
+            border-color: #517096
+            img
+              margin-top: -4px
+          &:hover
+            background-color: #3c5c83
+            border-color: #517096
+            color: #ffffff
+    .header__profile
+      background-color: #517198
+      .header__profile--list
+        display: flex
+        margin-left: 9px
+        .header__profile--item
+          margin-left: 18px
+          cursor: pointer
+          border-radius: 50%
+          width: 56px
+          height: 56px
+          display: flex
+          align-items: center
+          justify-content: center
+          background-color: #5a7aa1
+          position: relative
+          .profile__popup
+            display: none
+            cursor: auto
+            position: absolute
+            top: 66px
+            right: -4px
+            width: 450px
+            height: 400px
+            background-color: #ffffff
+            box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.23)
+            img
+              cursor: pointer
+            .profile__popup--content
+              padding-top: 18px
+              .profile__popup--main
+                display: flex
+                align-items: center
+                padding: 0 23px 20px 21px
+                .profile__popup--photo
+                  margin-right: 22px
+                  margin-top: 2px
+                .profile__popup--info
+                  min-width: 295px
+                  min-height: 91px
+                  display: flex
+                  justify-content: space-between
+                  .profile__popup--about
+                    display: flex
+                    flex-direction: column
+                    .profile__popup--name
+                      font-family: neris-semibold, Arial
+                      font-size: 18px
+                      line-height: 22px
+                      font-weight: 600
+                      color: #5f7fa6
+                      margin-top: 6px
+                    .profile__popup--status
+                      font-family: neris-semibold, Arial
+                      font-size: 14px
+                      line-height: 24px
+                      font-weight: 600
+                      color: #6e6e70
+                      margin: 3px 0 14px 1px
+                    .profile__popup--btn
+                      height: 28px
+                      cursor: pointer
+                      font-family: OpenSans-Regular, sans-serif
+                      font-size: 12px
+                      line-height: 21px
+                      font-weight: 400
+                      color: #8a95a2
+                      border: 1px solid #dae0e5
+                      background-color: transparent
+                  .profile__popup--nav
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    margin-top: 6px
+                    margin-right: 3px
+              .profile__popup--page
+                display: flex
+                align-items: center
+                padding: 15px 23px 15px 22px
+                border-top: 1px solid #e6e9e9
+                border-bottom: 1px solid #e6e9e9
+                .profile__popup--img
+                  margin-right: 15px
+                .profile__popup--title
+                  font-family: neris-semibold, Arial
+                  font-size: 15px
+                  line-height: 22px
+                  font-weight: 600
+                  color: #5f7fa6
+                  margin-top: -5px
+                .page--name
+                  font-family: neris-light, Arial
+                  font-size: 13px
+                  line-height: 22px
+                  font-weight: 300
+                  color: #464647
+                  margin-top: 1px
+                  margin-left: 1px
+                &:hover
+                  background-color: #f3f6f7
+                &:nth-child(3)
+                  .profile__popup--img
+                    margin-top: -2px
+                  .profile__popup--title
+                    margin-top: -8px
+                  .page--name
+                    margin-top: 1px
+              .profile__popup--new
+                display: flex
+                align-items: center
+                padding: 23px 0 25px 31px
+                .profile__popup--add
+                  border: 2px dashed #d5d9df
+                  width: 34px
+                  height: 34px
+                  display: flex
+                  justify-content: center
+                  align-items: center
+                  margin-right: 31px
+                .profile__add--text
+                  box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.89)
+                  font-family: neris-semibold, Arial
+                  font-size: 16px
+                  line-height: 22px
+                  font-weight: 600
+                  color: #5ca2d3
+
+            &:after
+              content: ""
+              border: 7px solid transparent
+              border-bottom: 7px solid #ffffff
+              position: absolute
+              top: -14px
+              right: 25px
+
+          &:nth-child(3)
+            background-color: #5ca2d3
+            color: #ffffff
+            &:after
+              display: flex
+          &:last-child
+            margin-left: 31px
+            position: relative
+            .profile__img
+              width: 56px
+              height: 56px
+              border: 2px solid #bac9db
+              border-radius: 50%
+            &:before
+              content: ""
+              cursor: auto
+              width: 1px
+              height: 31px
+              position: absolute
+              left: -15px
+              background-color: #6383aa
+            &:hover
+              .profile__img
+                border: 2px solid #ffffff
+                border-radius: 50%
+          &:hover
+            background-color: #5ca2d3
+          &:after
+            content: "5"
+            position: absolute
+            bottom: -2px
+            right: -4px
+            display: none
+            align-items: center
+            justify-content: center
+            width: 17px
+            height: 17px
+            background-color: #517198
+            font-family: neris-black, Arial
+            font-size: 13px
+            line-height: 11px
+            font-weight: 900
+            color: #ffffff
+            border-radius: 50%
+
+//	        Address
+//_________________________________
+.address
+  background-color: #ffffff
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.1)
+  .address__content
+    display: flex
+    justify-content: space-between
+    padding: 17px 0
+    .address__item--text
+      margin-left: 14px
+      margin-top: -2px
+      .address__item--suptitle
+        font-family: neris-light, Arial
+        font-size: 14px
+        line-height: 22px
+        font-weight: 300
+        color: #5f7fa6
+        font-style: normal
+        b
+          font-family: neris-semibold, Arial
+          font-weight: 600
+          margin-left: 1px
+        span
+          font-family: neris-light, Arial
+          font-size: 13px
+          line-height: 22px
+          font-weight: 300
+          color: #686868
+          margin-right: 7px
+      .address__item--subtitle
+        font-family: neris-semibold, Arial
+        font-size: 20px
+        line-height: 22px
+        font-weight: 600
+        color: #383838
+        margin-top: 1px
+    .address__items
+      margin-left: 7px
+      position: relative
+      .address__title
+        display: flex
+        align-items: center
+        .address__item--btn
+          outline: none
+          border: none
+          margin-left: 31px
+          margin-top: 4px
+          background-color: transparent
+          cursor: pointer
+      .address__popup
+        display: none
+        position: absolute
+        left: -17px
+        top: -16px
+        width: 460px
+        height: 481px
+        background-color: #ffffff
+        z-index: 50
+        box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.23)
+        .address__popup--content
+          padding: 16px 0 0
+          .address__title
+            padding:  0 16px 20px
+          .address__popup--container
+            height: 321px
+            overflow-y: auto
+            &::-webkit-scrollbar
+              width: 10px
+              background-color: #ccd2d9
+            &::-webkit-scrollbar-thumb
+              border-radius: 10px
+              background-color: #f4f4f4
+              border: 1px solid #ccd2d9
+            &::-webkit-scrollbar-track
+              -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2)
+              border-radius: 10px
+              background-color: #ccd2d9
+
+
+
+
+            .address__item
+              display: flex
+              align-items: center
+              border-top: 1px solid #ccd6e2
+              padding: 15px 16px 20px
+              .address__item--text
+                min-width: 355px
+              .address__item--suptitle
+                color: #b3b3b4
+                b
+                  color: #bcbdbd
+              .address__item--btn
+                border: none
+                outline: none
+                background-color: transparent
+                margin-left: 5px
+                margin-top: 6px
+              .address__item--subtitle
+                color: #839fb4
+              &:nth-child(4)
+                span
+                  margin-right: 11px
+              &:last-child
+                border-bottom: 1px solid #ccd6e2
+          .address__new
+            padding: 19px 18px 10px 20px
+            display: flex
+            align-items: center
+            .plus_address
+              border: 2px dashed #d5d9df
+              display: flex
+              justify-content: center
+              align-items: center
+              width: 34px
+              height: 34px
+              margin-top: 4px
+              margin-left: 2px
+            .address__new--text
+              box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.89)
+              font-family: neris-semibold, Arial
+              font-size: 18px
+              line-height: 22px
+              font-weight: 600
+              color: #5ca2d3
+              margin: -5px 33px 0 21px
+
+            .address__new--btn
+              font-family: neris-semibold, Arial
+              font-size: 15px
+              line-height: 22px
+              font-weight: 600
+              color: #899aaf
+              background-color: #ffffff
+              border: 2px solid #d9dcdf
+              padding: 5px 30px 6px 29px
+
+
+
+
+    .address__btn
+      padding: 9px 0 12px
+      cursor: pointer
+      font-family: neris-semibold, Arial
+      font-size: 16px
+      line-height: 22px
+      font-weight: 600
+      color: #899aaf
+      border: 2px solid #d9dcdf
+      outline: none
+      background-color: #ffffff
+      width: 450px
+      &:hover
+        color: #ffffff
+        background-color: #5ca2d3
+        border-color: #5ca2d3
+
+
+//	        Tabs
+//_________________________________
+.tabs
+  margin-top: 29px
+  .tabs__content
+    display: flex
+    .tabs__main
+      .active
+        background-color: #5ca2d3
+      .tabs__main--nav
+        position: relative
+        &:after
+          content: ""
+          width: 100%
+          height: 3.3px
+          background-color: #5ca2d3
+          position: absolute
+          bottom: -3px
+          left: 0
+        .tabs__main--title
+          display: inline-block
+          box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.89)
+          font-family: neris-semibold, Arial
+          font-size: 15px
+          line-height: 22px
+          font-weight: 600
+          color: #77889d
+          padding: 13px 29px 13px 28px
+          border: 1px solid #d9dcdf
+          cursor: pointer
+          &.active
+            color: #ffffff
+            border-color: #5ca2d3
+          &:nth-child(2)
+            padding: 13px 28px 13px
+            margin-right: 1px
+            span
+              margin-left: -1px
+
+          &:nth-child(3)
+            padding: 13px 26px 13px 27px
+            margin-right: 1px
+          &:nth-child(4)
+            padding: 13px 26px 13px
+            margin-right: 1px
+
+          &:nth-child(5)
+            padding: 13px 25px 13px
+            margin-right: 1px
+
+          &:last-child
+            padding: 28px 17px 18px 17px
+            margin-left: 2px
+          .burger__small
+            cursor: pointer
+            display: flex
+            justify-content: center
+            align-items: center
+            .burger__small--item
+              font-size: 0
+              width: 20px
+              height: 2px
+              background-color: #77889d
+              box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.89)
+              position: relative
+              top: -4px
+              &:after, &:before
+                content: ""
+                height: 2px
+                width: 20px
+                position: absolute
+                background-color: #77889d
+                box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.89)
+              &:after
+                top: -6px
+              &:before
+                top: 6px
+      .tabs__main--inner
+        margin-top: 5px
+        width: 730px
+        padding-bottom: 250px
+        .tabs__main--item
+          .tabs__main--content
+            border-bottom: 1px solid #dadedf
+            background-color: #ffffff
+            position: relative
+            .tabs__subnav
+              padding: 7px 9px 10px 19px
+              border-bottom: 1px solid #e3e3e3
+              background-color: #ffffff
+              .tabs__subnav--items
+                display: flex
+                align-items: center
+                .tabs__subnav--item
+                  position: relative
+                  margin-right: 30px
+                  padding: 0 10px
+                  &:first-child
+                    margin-right: 15px
+                  &:nth-child(2)
+                    margin-right: 21px
+                  &:nth-child(3)
+                    margin-right: 19px
+                  &:nth-child(4)
+                    margin-right: 114px
+                  &:nth-child(5)
+                    margin-right: 19px
+                  &:last-child
+                    background-color: #97a5b5
+                    margin-right: 0
+                    margin-top: 1px
+                    padding: 4px 30px 5px
+                    a
+                      color: #ffffff
+                    &:hover
+                      background-color: #97a5b5
+                      a
+                        color: #ffffff
+                      &:after
+                        display: none
+
+                  a
+                    font-family: neris-semibold, Arial
+                    font-size: 14px
+                    line-height: 25px
+                    font-weight: 600
+                    color: #77889d
+                  &:hover
+                    a
+                      color: #5ca2d3
+                    &:after
+                      content: ""
+                      width: 100%
+                      height: 4px
+                      background-color: #5ca2d3
+                      position: absolute
+                      bottom: -16px
+                      left: 0
+            .tabs__container
+              width: 680px
+              margin: 0 auto 0
+              img
+                cursor: pointer
+              .tabs__post
+                margin-top: 29px
+                .tabs__post--about
+                  display: flex
+                  .tabs__post--photo
+                    width: 60px
+                    height: 60px
+                    margin-right: 25px
+                    margin-top: -2px
+                  .tabs__post--inner
+                    display: flex
+                    flex-direction: column
+                    max-width: 554px
+                    margin-right: 20px
+                    margin-bottom: 25px
+                    .tabs__post--name
+                      font-family: neris-semibold, Arial
+                      font-size: 16px
+                      line-height: 22px
+                      font-weight: 600
+                      color: #6789a3
+                      margin-left: 1px
+                      .job
+                        color: #97a5b5
+                        margin-left: 6px
+                    .tabs__post--time
+                      display: flex
+                      margin-top: 11px
+                      margin-bottom: 19px
+                      time
+                        font-family: OpenSans-SemiboldItalic, sans-serif
+                        font-size: 12px
+                        line-height: 22px
+                        font-weight: 600
+                        font-style: italic
+                        color: #8d8d8d
+                        margin-right: 16px
+                      img
+                        width: 19px
+                        height: 19px
+                    .tabs__post--title
+                      font-family: OpenSans-Semibold, sans-serif
+                      font-size: 20px
+                      line-height: 22px
+                      font-weight: 600
+                      color: #5f7fa6
+                    .tabs__post--text
+                      font-family: neris-light, Arial
+                      font-size: 15px
+                      line-height: 28px
+                      font-weight: 300
+                      color: #686868
+                      margin-bottom: 23px
+                      margin-top: 5px
+                    .tabs__post--place
+                      display: flex
+                      align-items: center
+                      img
+                        margin-right: 13px
+                        width: 17px
+                        height: 22px
+                      address
+                        font-family: neris-semibold, Arial
+                        font-size: 15px
+                        line-height: 28px
+                        font-weight: 600
+                        font-style: normal
+                        color: #77889d
+                        span
+                          color: #383838
+                          margin-right: 4px
+
+                  .tabs__post--close
+                    width: 24px
+                    height: 24px
+                .tabs__post--photos
+                  .tabs__post--photo
+                  .photo-small
+                    margin-top: 2px
+                    &:nth-child(2)
+                      margin-right: 2px
+                .tabs__post--socials
+                  margin-right: -2px
+                  display: flex
+                  align-items: center
+                  padding: 8px 0 12px
+
+                  .share
+                    margin-right: 28px
+                  .follow
+                    display: flex
+                    align-items: center
+                    position: relative
+                    img
+                      margin-right: 17px
+                    .follow__count
+                      font-family: OpenSans-italic, sans-serif
+                      font-size: 13px
+                      line-height: 22px
+                      font-weight: 400
+                      font-style: italic
+                      color: #848282
+                      margin-right: 9px
+                      span
+                       font-family: OpenSans-SemiboldItalic, sans-serif
+                       font-weight: 600
+                       color: #6cca58
+
+                    &:hover
+                      .follow__count
+                        color: #87bbde
+                  .follow__popup
+                    display: none
+                    position: absolute
+                    top: 39px
+                    left: -70px
+                    width: 416px
+                    height: 451px
+                    background-color: #ffffff
+                    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.23)
+                    z-index: 50
+                    &:before
+                      content: ""
+                      width: 1px
+                      height: 10px
+                      position: absolute
+                      left: 21%
+                      top: -10px
+                      transform: rotate(-45deg)
+                      background-color: #dbdede
+                    &:after
+                      content: ""
+                      width: 1px
+                      height: 10px
+                      position: absolute
+                      left: 19%
+                      top: -10px
+                      transform: rotate(45deg)
+                      background-color: #dbdede
+                    .follow__popup--content
+                      .follow__popup--items
+                        height: 400px
+                        overflow-y: auto
+                        &::-webkit-scrollbar
+                          width: 10px
+                          background-color: #ccd2d9
+                        &::-webkit-scrollbar-thumb
+                          border-radius: 10px
+                          background-color: #f4f4f4
+                          border: 1px solid #ccd2d9
+                        &::-webkit-scrollbar-track
+                          -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2)
+                          border-radius: 10px
+                          background-color: #ccd2d9
+                      .follow__popup--count
+                        padding: 2px 2px 0 25px
+                        box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.28)
+                        font-family: neris-light, Arial
+                        font-size: 14px
+                        line-height: 45px
+                        font-weight: 300
+                        color: #77889d
+                        &:after
+                          content: ""
+                          width: 15px
+                          height: 1px
+                          position: absolute
+                          left: 18.5%
+                          top: -1px
+                          background-color: #ffffff
+                        span
+                          color: #5ca2d3
+                          font-family: neris-semibold, Arial
+                      .follow__popup--item
+
+                        padding: 13px 9px 7px 9px
+                        border-top: 1px solid #e1e1e1
+                        a
+                          display: flex
+                          align-items: center
+                          margin-top: -1px
+                          img
+                            margin-right: 15px
+                          .follower__name
+                            color: #5ca2d3
+                            font-family: neris-semibold, Arial
+                            font-size: 13px
+                            span
+                              color: #f8887d
+                              margin-left: 4px
+
+
+                  .followers
+                    display: flex
+                    align-items: center
+                    margin-left: 12px
+                    margin-right: 62px
+                    div
+                      &:nth-child(6)
+                        position: relative
+                        &:after
+                          content: ""
+                          width: 30px
+                          height: 2px
+                          background-color: #f77b6f
+                          position: absolute
+                          bottom: -3px
+                          left: 1px
+                    .follower__img
+                      display: block
+                      margin-right: 10px
+
+                  .likes
+                    display: flex
+                    position: relative
+                    .likes__item
+                      display: flex
+                      margin-right: 25px
+                      &:first-child
+                        .likes__count
+                          margin-left: 8px
+                      &:nth-child(2)
+                        margin-right: 0
+                        img
+                          margin-top: 4px
+                        .likes__count
+                          margin-left: 7px
+                      img
+                        width: 21px
+                        height: 18px
+                      .likes__count
+                        font-family: neris-semibold, Arial
+                        font-size: 14px
+                        line-height: 22px
+                        font-weight: 600
+                        color: #6789a3
+                        margin-left: 3px
+                    .likes__popup
+                      display: none
+                      width: 259px
+                      height:  173px
+                      background-color: #ffffff
+                      box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.23)
+                      position: absolute
+                      right: -23px
+                      top: 39px
+                      .likes__popup--images
+                        padding: 3px 15px 0 17px
+                        margin-right: -10px
+                        .likes__popup--image
+                          margin-right: 6px
+                          margin-bottom: 6px
+                      .likes__popup--title
+                        box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.28)
+                        font-family: neris-light, Arial
+                        font-size: 14px
+                        line-height: 45px
+                        font-weight: 300
+                        color: #77889d
+                        text-align: center
+                        &:after
+                          content: ""
+                          width: 10px
+                          height: 1px
+                          position: absolute
+                          right: 44%
+                          top: -1px
+                          background-color: #ffffff
+                        span
+                          font-family: neris-semibold, Arial
+                          font-weight: 600
+                          color: #5ca2d3
+                      &:before
+                        content: ""
+                        width: 1px
+                        height: 10px
+                        position: absolute
+                        right: 45%
+                        top: -10px
+                        transform: rotate(-45deg)
+                        background-color: #dfe2e2
+
+                      &:after
+                        content: ""
+                        width: 1px
+                        height: 10px
+                        position: absolute
+                        left: 53%
+                        top: -10px
+                        transform: rotate(45deg)
+                        background-color: #dfe2e2
+
+            .comments__btn
+              cursor: pointer
+              width: 100%
+              font-family: OpenSans-Regular, sans-serif
+              font-size: 14px
+              line-height: 22px
+              font-weight: 400
+              color: #686868
+              background-color: #f6f6f6
+              border: none
+              border-bottom: 1px solid #e7e7e7
+              border-top: 1px solid #dadedf
+              outline: none
+              padding: 11px 0 12px 25px
+              text-align: center
+              span
+                font-family: OpenSans-Semibold, sans-serif
+                font-weight: 700
+                color: #6cca58
+            .tabs__comments
+              padding: 2px 23px 0 44px
+              .tabs__comment
+                margin: 19px 0 24px
+                display: flex
+                flex-direction: column
+                .tabs__comment--inner
+                  display: flex
+                  .tabs__comment--photo
+                    width: 40px
+                    height: 40px
+                    margin-right: 26px
+                    margin-top: 5px
+                  .tabs__comment--main
+                    width: 592px
+                    display: flex
+                    justify-content: space-between
+                    .tabs__comment--about
+                      width: 538px
+                      display: flex
+                      flex-direction: column
+                      .tabs__comment--name
+                        font-family: neris-semibold, Arial
+                        font-size: 14px
+                        line-height: 22px
+                        font-weight: 600
+                        color: #6789a3
+                        span
+                          color: #97a5b5
+                          margin-left: 3px
+                      .tabs__comment--text
+                        font-family: OpenSans-Regular, sans-serif
+                        font-size: 13px
+                        line-height: 22px
+                        font-weight: 400
+                        color: #686868
+                        margin-top: 8px
+                  .comment__close
+                    cursor: pointer
+                    border: none
+                    outline: none
+                    background-color: transparent
+                    width: 10px
+                    height: 10px
+                    margin-top: -6px
+                .tabs__comment--info
+                  margin-top: 19px
+                  margin-left: 66px
+                  padding-bottom: 3px
+                  display: flex
+                  justify-content: space-between
+                  border-bottom: 1px solid #dee2e3
+                  .tabs__comment--answer
+                    display: flex
+                    .tabs__comment--time
+                      font-family: OpenSans-italic, sans-serif
+                      font-size: 12px
+                      line-height: 22px
+                      font-weight: 400
+                      font-style: italic
+                      color: #8d9395
+                      margin-right: 25px
+                      position: relative
+                      &:after
+                        content: ""
+                        width: 1px
+                        height: 8px
+                        background-color: #abb1b3
+                        position: absolute
+                        right: -12.5px
+                        top: 7px
+                    .tabs__comment--respond
+                      font-family: OpenSans-italic, sans-serif
+                      font-size: 12px
+                      line-height: 22px
+                      font-weight: 400
+                      font-style: italic
+                      color: #6789a3
+                  .tabs__comment--rates
+                    display: flex
+                    align-items: center
+                    .tabs__comment--like
+                      display: flex
+                      .comments__likes--item
+                        display: flex
+                        align-items: center
+                        font-family: neris-semibold, Arial
+                        font-size: 12px
+                        line-height: 15px
+                        font-weight: 600
+                        color: #9a9fa0
+                        margin-right: 14px
+                        div
+                          margin-left: 9px
+                .tabs__comment--ready
+                  display: flex
+                  padding-top: 25px
+                  padding-left: 60px
+                  .tabs__comment--photo
+                    width: 30px
+                    height: 30px
+                  .tabs__comment--main
+                    width: 592px
+                    display: flex
+                    justify-content: space-between
+                    .tabs__comment--about
+                      width: 538px
+                      display: flex
+                      flex-direction: column
+                      margin-left: 2px
+                      .tabs__comment--name
+                        font-family: neris-semibold, Arial
+                        font-size: 14px
+                        line-height: 22px
+                        font-weight: 600
+                        color: #6789a3
+                        margin-top: -7px
+                      .tabs__comment--text
+                        font-family: OpenSans-Regular, sans-serif
+                        font-size: 13px
+                        line-height: 22px
+                        font-weight: 400
+                        color: #686868
+                        margin-top: 7px
+                        max-width: 390px
+                        .tabs__comment--info
+                  .comment__close
+                    cursor: pointer
+                    border: none
+                    outline: none
+                    background-color: transparent
+                    width: 10px
+                    height: 10px
+                    margin-top: -6px !important
+                    margin-right: 5px !important
+                  .tabs__comment--about
+                    width: auto !important
+
+                &:nth-child(2)
+                  .tabs__comment--photo
+                    margin-top: 2px
+                  .tabs__comment--main
+                    .tabs__comment--about
+                      .tabs__comment--name
+                      .tabs__comment--text
+                        margin-top: 6px
+                        margin-left: -2px
+                  .comment__close
+                    margin-top: -8px
+                  .tabs__comment--info
+                    margin-top: 21px
+                  .comments__likes--item
+                    margin-left: -5px
+                  .tabs__comment--time
+                    &:after
+                      left: 10px
+                &:last-child
+                  .tabs__comment--info
+                    border: none
+                  .tabs__comment--answer
+                    margin-left: -2px
+                  .comments__likes--item
+                    margin-left: -6px
+                  .tabs__comment--time
+                    &:after
+                        left: 10px
+                  .comment--info
+                    margin-top: 29px !important
+                    margin-left: 67px !important
+                    border: none !important
+
+
+            .tabs__recall
+              display: flex
+              align-items: center
+              margin-top: -11px
+              padding-bottom: 23px
+              img
+                margin-right: 21px
+                margin-top: -5px
+              textarea
+                width: 620px
+                height: 40px
+                resize: none
+                padding: 2px 0 0 13px
+                border: 2px solid #dddddd
+                font-family: OpenSans-italic, sans-serif
+                font-size: 15px
+                line-height: 30px
+                font-weight: 400
+                font-style: italic
+                color: #6789a3
+                &::placeholder
+                  color: #b3c4d1
+
+            &:nth-child(2)
+              position: relative
+              padding-bottom: 10px
+              .tabs__post
+                margin-top: 18px
+
+              .tabs__post--about
+                padding-top: 30px
+                padding-bottom: 7px
+              .tabs__post--text
+                display: flex
+                margin-top: -1px !important
+                p
+                  margin-top: -7px
+              .tabs__post--close
+                margin-right: -2px
+                margin-top: -2px
+              .tabs__post--inner
+                margin-right: 0 !important
+                margin-bottom: 0 !important
+                max-width: 100%
+                min-width: 600px
+              .tabs__post--img
+                width: 40px
+                height: 40px
+                margin-right: 13px
+              .arrow__next
+                width: 15px
+                height: 11px
+                margin-right: 13px
+                margin-top: 2px
+              .tabs__post--close
+                margin-left: -26px
+                margin-top: -2px
+              .star
+                margin-right: 27px
+              .share
+                margin-right: 30px !important
+              .social__faq
+                margin-right: 28px
+              .follow__count
+                font-family: OpenSans-italic, sans-serif !important
+                font-size: 14px !important
+                line-height: 22px !important
+                font-weight: 400 !important
+                font-style: italic !important
+                color: #6789a3 !important
+                margin-right: 14px !important
+              .arrow__right
+                margin-right: 204px
+              .tabs__post--socials
+                width: 730px
+                border-top: 1px solid #e6e9e9
+                border-bottom: 1px solid #e6e9e9
+                margin: 0 -40px 0 -25px
+                padding: 12px 30px 15px 21px !important
+              .likes
+                margin-right: -10px
+              .tabs__post--followers
+                display: flex
+                align-items: center
+                position: relative
+                &:after
+                  content: ""
+                  width: 731px
+                  height: 1px
+                  background-color: #e6e9e9
+                  position: absolute
+                  bottom: 0
+                  left: -26px
+                .followers
+                  display: flex
+                  align-items: center
+                  padding: 10px 0 8px
+                  margin-right: 265px
+                  .follower__img
+                    margin-right: 10px
+                .followers__title
+                  font-family: OpenSans-italic, sans-serif
+                  font-size: 14px
+                  line-height: 22px
+                  font-weight: 400
+                  font-style: italic
+                  color: #8d8d8d
+                  margin-right: 25px
+                .arrow__right
+                  margin-right: -10px
+              .tabs__comment--info
+
+              .tabs__recall
+                padding-bottom: 0
+                padding-top: 0
+              .comment--recall
+                margin-top: -20px !important
+                padding-bottom: 10px
+
+              .tabs__comments
+                padding: 6px 0 0 19px
+                .tabs__comment--feedback
+                  padding: 21px 20px 13px 0
+                  margin-left: 66px
+                  border-bottom: 1px solid #dee2e3
+                  .tabs__recall--img
+                    margin-right: 10px
+                  textarea
+                    width: 515px
+                    height: 32px
+                    padding: 0 8px !important
+                    position: relative
+                  .photograph
+                    position: absolute
+                    right: 55px
+                  button
+                    cursor: pointer
+                    border: none
+                    outline: none
+                    background-color: #d2d2d2
+                    width: 45px
+                    height: 32px
+                    margin-top: -4px
+                    padding: 10px 13px
+
+              .tabs__comment
+                &:nth-child(2)
+                  margin-bottom: 26px
+                  .tabs__comment--info
+                    border-bottom: none
+                &:last-child
+                  .comment__close
+                    margin-top: -10px
+                  .tabs__comment--info
+                    border-bottom: 1px solid #dadedf
+                    margin-top: 30px
+                    margin-left: 64px
+                    padding-bottom: 7px
+                  .tabs__comment--photo
+                    margin-left: 4px !important
+                    margin-right: 22px
+
+
+
+
+              .comment--progress
+                margin-top: -10px !important
+            &:nth-child(3)
+              margin-top: -10px !important
+              .tabs__post
+                padding-top: 28px
+              .tabs__post--time
+                margin-bottom: 1px !important
+              .tabs__post--inner
+                margin-right: 0 !important
+                max-width: 700px !important
+                position: relative
+              .tabs__post--close
+                position: absolute
+                right: 25px
+              .text--link
+                color: #5ca2d3
+                text-decoration: underline
+              .tabs__post--about
+                margin-bottom: -23px
+              .tabs__post--photos
+                margin-right: -10px
+              .photo-big
+                margin-left: 2px
+              .photo-small
+                margin-right: 2px
+              .tabs__post--socials
+                padding-top: 10px !important
+                padding-bottom: 16px !important
+              .follow__count
+                font-family: OpenSans-italic, sans-serif
+                font-size: 14px !important
+                line-height: 22px
+                font-weight: 700
+                font-style: italic
+                color: #6789a3 !important
+              .star
+                margin-right: 28px
+              .social__faq
+                margin-right: 30px
+              .follow
+                margin-right: 323px
+              .blog--comment
+                margin-top: 0
+                width: 730px
+                padding: 25px 23px 23px
+                margin: 0 -30px 0 -30
+                border-top: 1px solid #cbd1d7
+                border-bottom: 1px solid #cbd1d7
+
+            &:nth-child(4)
+              margin-top: -10px !important
+              .tabs__post
+                padding-top: 28px
+              .tabs__post--time
+                margin-top: 9px !important
+                margin-bottom: 11px !important
+              .music__name
+                font-family: neris-semibold, Arial
+                font-size: 15px
+                line-height: 22px
+                font-weight: 600
+                color: #5ca2d3
+                margin: 0 120px 0 13px
+                span
+                  font-family: neris-light, Arial
+                  font-size: 15px
+                  line-height: 22px
+                  font-weight: 300
+                  color: #686868
+                  margin-left: 12px
+              .music__time
+                font-family: neris-light, Arial
+                font-size: 13px
+                line-height: 22px
+                font-weight: 300
+                color: #686868
+              .tabs__post--music
+                display: flex
+                align-items: center
+                margin-left: -3px !important
+              .tabs__post--inner
+                margin-right: 0 !important
+                max-width: 700px !important
+                position: relative
+              .tabs__post--close
+                position: absolute
+                right: 24px
+                top: 24px
+              .text--link
+                color: #5ca2d3
+                text-decoration: underline
+              .tabs__post--about
+                margin-bottom: -23px
+              .tabs__post--photos
+                margin-right: -10px
+              .photo-big
+                margin-left: 2px
+              .photo-small
+                margin-right: 2px
+              .tabs__post--socials
+                padding-top: 10px !important
+                padding-bottom: 16px !important
+                position: relative
+                &:before
+                  content: ""
+                  width: 730px
+                  height: 2px
+                  background-color: #e6e9ea
+                  position: absolute
+                  top: -5px
+                  left: -25px
+              .follow__count
+                font-family: OpenSans-italic, sans-serif
+                font-size: 14px !important
+                line-height: 22px
+                font-weight: 700
+                font-style: italic
+                color: #6789a3 !important
+              .star
+                margin-right: 28px
+              .social__faq
+                margin-right: 30px
+              .follow
+                margin-right: 323px
+              .blog--comment
+                margin-top: 0
+                width: 730px
+                padding: 25px 23px 23px
+                margin: 0 -30px 0 -30
+                border-top: 1px solid #cbd1d7
+                border-bottom: 1px solid #cbd1d7
+            &:nth-child(5)
+              margin-top: -10px !important
+              .tabs__post
+                padding-top: 28px
+              .tabs__post--time
+                margin-top: 12px !important
+                margin-bottom: 9px !important
+              .document__about
+                font-family: neris-semibold, Arial
+                font-size: 15px
+                line-height: 22px
+                font-weight: 600
+                color: #5ca2d3
+                margin-left: 12px
+              .document__name
+                font-family: neris-light, Arial
+                font-size: 15px
+                line-height: 22px
+                font-weight: 300
+                color: #686868
+                margin-left: 20px
+              .tabs__post--document
+                display: flex
+                align-items: center
+                margin-left: -3px !important
+              .tabs__post--inner
+                margin-right: 0 !important
+                max-width: 700px !important
+                position: relative
+              .tabs__post--close
+                position: absolute
+                right: 24px
+                top: 24px
+              .tabs__post--about
+                margin-bottom: -23px
+              .tabs__post--socials
+                padding-top: 14px !important
+                padding-bottom: 17px !important
+                position: relative
+                &:before
+                  content: ""
+                  width: 730px
+                  height: 1px
+                  background-color: #e6e9ea
+                  position: absolute
+                  top: -2px
+                  left: -25px
+
+              .star
+                margin-right: 28px
+              .social__faq
+                margin-right: 30px
+              .follow
+                margin-right: 323px
+              .blog--comment
+                margin-top: 0
+                width: 730px
+                padding: 25px 23px 22px
+                margin: 0 -30px 0 0
+                border-top: 1px solid #cbd1d7
+                border-bottom: 1px solid #cbd1d7
+              .follow__count
+                font-family: OpenSans-italic, sans-serif
+                font-size: 14px !important
+                line-height: 22px
+                font-weight: 700
+                font-style: italic
+                color: #6789a3 !important
+            &:nth-child(6)
+              margin-top: -13px !important
+              .tabs__post
+                padding-top: 30px
+              .tabs__post--time
+                margin-top: 12px !important
+                margin-bottom: 4px !important
+              .tabs__post--vote
+                position: relative
+                padding-bottom: 40px
+                &:after
+                  content: ""
+                  width: 620px
+                  height: 1px
+                  background-color: #e6e9ea
+                  position: absolute
+                  bottom: 18px
+                  left: 0
+
+                .vote__title
+                  font-family: neris-semibold, Arial
+                  font-size: 17px
+                  line-height: 28px
+                  font-weight: 600
+                  color: #686868
+                .vote__subtitle
+                  font-family: neris-light, Arial
+                  font-size: 17px
+                  line-height: 28px
+                  font-weight: 300
+                  color: #5ca2d3
+              .tabs__post--choice
+                display: flex
+                flex-direction: column
+                position: relative
+                padding-bottom: 39px
+                &:after
+                  content: ""
+                  width: 620px
+                  height: 1px
+                  background-color: #e6e9ea
+                  position: absolute
+                  bottom: 17px
+                  left: 0
+                .choice__item
+                  display: flex
+                  align-items: center
+                  .choice__title
+                    font-family: neris-light, Arial
+                    font-size: 15px
+                    line-height: 30px
+                    font-weight: 300
+                    color: #686868
+                    margin-left: 22px
+
+              .tabs__post--progress
+                margin-left: 2px
+                .progress__bar--title
+                  font-family: neris-light, Arial
+                  font-size: 14px
+                  line-height: 30px
+                  font-weight: 300
+                  color: #686868
+                  margin-bottom: 1px
+                .progress__bar--item
+                  display: flex
+                  position: relative
+                  margin-bottom: 5px
+                  .progress__bar
+                    font-family: neris-semibold, Arial
+                    font-size: 14px
+                    line-height: 22px
+                    font-weight: 600
+                    color: #77889d
+                    width: 508px
+                    height: 24px
+                    text-align: center
+                    background-color: #e8ecef
+                    margin-left: 1px
+                    padding-left: 14px
+
+                  .progress__bar--count
+                    font-family: neris-semibold, Arial
+                    font-size: 14px
+                    line-height: 22px
+                    font-weight: 600
+                    color: #5ca2d3
+                    margin-left: 18px
+                  .progress__bar--num
+                    font-family: neris-semibold, Arial
+                    font-size: 14px
+                    line-height: 22px
+                    font-weight: 600
+                    color: #ffffff
+                    margin-left: 18px
+                    position: absolute
+                    top: -1px
+                    left: 41%
+                    z-index: 50
+                  &:nth-child(2)
+                    position: relative
+                    &:after
+                      width: 24%
+                  &:nth-child(4)
+                    position: relative
+                    &:after
+                      width: 52%
+                  &:nth-child(6)
+                    position: relative
+                    &:after
+                      width: 18.4%
+                  &:after
+                    content: ""
+                    width: 30%
+                    height: 24px
+                    background-color: #5ca2d3
+                    position: absolute
+                    top: 0
+
+              .progress__total
+                font-family: neris-light, Arial
+                font-size: 15px
+                line-height: 30px
+                font-weight: 300
+                color: #686868
+                margin-top: 25px
+                padding-bottom: 5px
+                span
+                  font-family: neris-semibold, Arial
+                  font-weight: 600
+                  color: #5ca2d3
+
+                  margin-left: 4px
+
+
+              .tabs__post--inner
+                margin-right: 0 !important
+                max-width: 700px !important
+                position: relative
+              .tabs__post--close
+                position: absolute
+                right: 25px
+                top: 27px
+              .tabs__post--about
+                margin-bottom: -23px
+              .tabs__post--socials
+                padding-top: 14px !important
+                padding-bottom: 17px !important
+                position: relative
+                &:before
+                  content: ""
+                  width: 730px
+                  height: 1px
+                  background-color: #e6e9ea
+                  position: absolute
+                  top: -2px
+                  left: -25px
+              .star
+                margin-right: 28px
+              .social__faq
+                margin-right: 30px
+              .follow
+                margin-right: 323px
+              .blog--comment
+                margin-top: 0
+                width: 730px
+                padding: 25px 23px 23px
+                margin: 0 -30px 0 -30
+                border-top: 1px solid #cbd1d7
+                border-bottom: 1px solid #cbd1d7
+              .tabs__post--socials
+                padding-bottom: 15px !important
+                padding-top: 13px !important
+              .star
+                margin-right: 30px
+              .social__faq
+                margin-right: 30px
+              .follow
+                margin-right: 323px
+              .tabs__recall
+                .tabs__recall--img
+                  margin-top: -71px
+                  margin-left: 2px
+              .blog--comment
+                width: 730px
+                padding: 25px 23px 26px
+                margin: 0 -30px 0 0
+                border-top: 1px solid #cbd1d7
+                border-bottom: 1px solid #cbd1d7
+                textarea
+                  width: 623px
+                  height: 72px
+                  border: 2px solid #5ca2d3
+              .follow__count
+                font-family: OpenSans-italic, sans-serif
+                font-size: 14px !important
+                line-height: 22px
+                font-weight: 700
+                font-style: italic
+                color: #6789a3 !important
+
+              .includes
+                display: flex
+                .vidgets
+                  display: flex
+                  align-items: center
+                  background-color: #eef2f5
+                  width: 459px
+                  height: 39px
+                  border: 1px solid #dae0e5
+                  padding: 10px 10px 7px 10px
+                  img
+                    margin-right: 21px
+                .send__btn
+                  background-color: #5f7fa6
+                  box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.38)
+                  font-family: neris-semibold, Arial
+                  font-size: 15px
+                  line-height: 22px
+                  font-weight: 600
+                  color: #ffffff
+                  outline: none
+                  border: none
+                  width: 160px
+                  height: 38px
+                  margin-left: 5px
+
+
+            &:first-child
+              &:before
+                display: none
+                content: ""
+                width: 100%
+                height: 2px
+                background-color: #bac8d9
+                position: absolute
+                top: 0
+
+            &:before
+              content: ""
+              width: 100%
+              height: 2px
+              background-color: #bac8d9
+              position: absolute
+              top: 0
+    .tabs__side
+      width: 500px
+      margin-left: 18px
+      margin-right: -50px
+      .tabs__side--nav
+        .tabs__side--title
+          display: inline-block
+          box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.89)
+          font-family: neris-semibold, Arial
+          font-size: 15px
+          line-height: 22px
+          font-weight: 600
+          color: #77889d
+          padding: 13px 21px 14px 23px
+          border: 1px solid #d9dcdf
+          border-bottom: none
+          cursor: pointer
+          &:nth-child(2)
+            margin-left: 3px
+            padding: 13px 23px 14px 23px
+            span
+              margin-left: -1px
+          &:nth-child(3)
+            padding: 13px 26px 14px 24px
+            span
+              margin-left: -1px
+
+          &:last-child
+            margin-left: 0
+            padding: 13px 23px 14px 27px
+            span
+              margin-left: -1px
+
+
+          &.active
+            color: #5ca2d3
+            background-color: #ffffff
+      .tabs__side--inner
+        width: 450px
+        .tabs__side--content
+          background-color: #ffffff
+          padding-top: 27px
+          border-bottom: 1px solid #cad0d5
+          padding-bottom: 2px
+          .side__container
+            width: 402px
+            margin: 0 auto
+            padding-left: 2px
+            .tabs__location--info
+              display: flex
+              .emblem
+                width: 51px
+                height: 60px
+                margin-right: 26px
+              .tabs__location--text
+                .tabs__location--title
+                  font-family: neris-semibold, Arial
+                  font-size: 24px
+                  line-height: 27px
+                  font-weight: 600
+                  color: #383838
+                  margin-bottom: 17px
+                  min-width: 240px
+                .tabs__location--subtitle
+                  font-family: neris-light,Arial
+                  font-size: 14px
+                  line-height: 22px
+                  font-weight: 300
+                  color: #828282
+                  margin-top: 4px
+                  b
+                    font-family: neris-semibold,Arial
+                    font-weight: 600
+                    color: #717171
+                    margin-left: 7px
+                    margin-right: 3px
+                  span
+                    color: #5f7fa6
+              .side__close
+                width: 24px
+                height: 24px
+
+                margin-left: 59px
+            .tabs__side--socials
+              display: flex
+              align-items: center
+              margin-left: -3px
+              margin-top: 28px
+              padding-bottom: 21px
+              .tabs__social--favorite
+                display: flex
+                .favorite__inner
+                  font-family: OpenSans-SemiboldItalic, sans-serif
+                  font-size: 13px
+                  line-height: 22px
+                  font-weight: 600
+                  font-style: italic
+                  color: #f77b6f
+                  margin-right: 67px
+                img
+                  width: 20px
+                  height: 19px
+                  margin-right: 14px
+            .socials__share
+              font-family: OpenSans-SemiboldItalic, sans-serif
+              font-size: 13px
+              line-height: 22px
+              font-weight: 600
+              font-style: italic
+              color: #899aaf
+              margin-right: 16px
+            .socials__items
+              display: flex
+              margin-right: -20px
+
+              .socials__item
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 27px
+                height: 25px
+                background-color: #dee2e5
+                border-radius: 50%
+                margin-right: 9px
+          .tabs__map--nav
+            border-top: 1px solid #e6e9e9
+            padding: 19px 23px 23px
+            display: flex
+            justify-content: space-between
+            .tabs__map--panoram
+              display: flex
+              align-items: center
+              div
+                font-family: OpenSans-SemiboldItalic, sans-serif
+                font-size: 13px
+                line-height: 22px
+                font-weight: 600
+                font-style: italic
+                color: #899aaf
+                margin-left: 13px
+            .tabs__map--show
+              display: flex
+              align-items: center
+              margin-right: -5px
+              .show__title
+                font-family: OpenSans-SemiboldItalic, sans-serif
+                font-size: 13px
+                line-height: 22px
+                font-weight: 600
+                font-style: italic
+                color: #899aaf
+                margin-right: 12px
+              button
+                border: none
+                outline: none
+                background-color: #899aaf
+                display: flex
+                align-items: center
+                width: 52px
+                height: 26px
+                border-radius: 15px
+                padding-left: 9px
+                .close
+                  box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.21)
+                  margin-right: 7px
+                .show
+                  width: 20px
+                  height: 20px
+                  background-color: #f4f4f4
+                  border: 1px solid #ffffff
+                  box-shadow: 0px 3px 3px 0px rgba(49,49,50,0.27)
+                  border-radius: 50%
+                  margin-right:  -5px
+          .maps
+            position: relative
+            .location
+              position: absolute
+              top: 0
+              right: 0
+            .pin
+              position: absolute
+              right: 77px
+              top: 40px
+          .maps__subnav
+            display: flex
+            border-bottom: 1px solid #e6e9e9
+            padding: 17px 20px 20px 24px
+            box-shadow: 0px 1px 1px 0px rgba(33,49,70,0.18)
+            .maps__more--photos
+              font-family: OpenSans-SemiboldItalic, sans-serif
+              font-size: 13px
+              line-height: 22px
+              font-weight: 600
+              font-style: italic
+              color: #899aaf
+              margin-right: 55px
+              span
+                font-family: OpenSans-BoldItalic, sans-serif
+                font-weight: 700
+                color: #6dcb5a
+            .maps__add--photos
+              font-family: OpenSans-Regular, sans-serif
+              font-size: 12px
+              line-height: 21px
+              font-weight: 400
+              color: #8a95a2
+              display: flex
+              align-items: center
+              outline: none
+              border: 1px solid #dfe2e7
+              background-color: #ffffff
+              padding: 0px 30px 4px 8px
+              margin-right: -20px
+              margin-top: -1px
+              img
+                margin-right: 24px
+              &:hover
+                background-color: #5ca2d3
+                color: #e1ebf3
+          .building--info
+            padding: 17px 20px 27px 22px
+            border-bottom: 1px solid #dbdfe2
+            position: relative
+            .building__about
+              .building__spec
+                font-family: neris-thin, Arial
+                font-size: 14px
+                line-height: 22px
+                font-weight: 300
+                color: #828282
+                span
+                  font-family: neris-semibold
+                  font-size: 14px
+                  line-height: 22px
+                  font-weight: 600
+                  color: #5f7fa6
+                  margin-left: 9px
+            .building__text
+              font-family: OpenSans-Italic,sans-serif
+              font-weight: 400
+              color: #959595
+              margin-top: 15px
+              line-height: 24px
+              font-size: 14px
+              span
+                font-family: OpenSans-SemiboldItalic,sans-serif
+                font-size: 14px
+                line-height: 24px
+                font-weight: 600
+                font-style: italic
+                color: #767676
+            .tabs__side--hide
+              width: 46px
+              height: 22px
+              background-color: #ffffff
+              box-shadow: 0px 1px 0px 0px rgba(198,206,208,0.81)
+              border: none
+              outline: none
+              position: absolute
+              left: 45%
+              bottom: -8px
+              border-radius: 15px
+          .services
+            margin: -2px -1px
+            box-shadow: 0px 1px 1px 0px rgba(33,49,70,0.18)
+            position: relative
+            .services__title
+              font-family: neris-semibold, Arial
+              font-size: 19px
+              line-height: 78px
+              font-weight: 600
+              color: #383838
+            .services__item
+              display: flex
+              flex-direction: column
+              margin: 6px 0 0 -1px
+              padding-bottom: 27px
+              padding-top: 18px
+              border-bottom: 1px solid #e5e9ea
+              &:nth-child(2)
+                padding-top: 0
+              &:last-child
+                border-bottom: none
+              .services__item--about
+                display: flex
+                img
+                  width: 60px
+                  height: 60px
+                  margin-top: 3px
+                .services__item--text
+                  display: flex
+                  flex-direction: column
+                  margin-left: 21px
+                  .services__item--title
+                    font-family: neris-semibold, Arial
+                    font-size: 14px
+                    line-height: 22px
+                    font-weight: 600
+                    color: #5f7fa6
+                  .services__item--subtitle
+                    font-family: OpenSans-Italic, sans-serif
+                    font-size: 11px
+                    line-height: 17px
+                    font-weight: 400
+                    font-style: italic
+                    color: #8a8888
+                    margin-top: 7px
+                    margin-bottom: -7px
+                    a
+                      color: #8a8888
+                      margin-right: 6px
+              .services__item--nav
+                margin-top: 26px
+                display: flex
+                margin-right: -6px
+                .maps__add--photos
+                  font-family: OpenSans-Regular, sans-serif
+                  font-size: 12px
+                  line-height: 21px
+                  font-weight: 400
+                  color: #8a95a2
+                  display: flex
+                  align-items: center
+                  outline: none
+                  border: 1px solid #dfe2e7
+                  background-color: #ffffff
+                  padding: 3px 23px 4px 5px
+                  margin-right: 56px
+                  margin-top: -1px
+                  img
+                    margin-right: 18px
+                  &:hover
+                    background-color: #5ca2d3
+                    color: #e1ebf3
+                a
+                  font-family: OpenSans-Regular, sans-serif
+                  font-size: 12px
+                  line-height: 21px
+                  font-weight: 400
+                  color: #8a95a2
+                  border: 1px solid #dfe2e7
+                  width: 94px
+                  height: 28px
+                  display: flex
+                  justify-content: center
+                  align-items: center
+                  &:hover
+                    background-color: #5ca2d3
+                    color: #e1ebf3
+                .services__item-site
+                  margin-right: 6px
+            .tabs__side--hide
+              width: 46px
+              height: 22px
+              background-color: #ffffff
+              box-shadow: 0px 1px 0px 0px rgba(198,206,208,0.81)
+              border: none
+              outline: none
+              position: absolute
+              left: 44%
+              bottom: -6px
+              border-radius: 15px
+
